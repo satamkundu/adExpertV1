@@ -16,7 +16,7 @@ function showPopup(e) {
 }
 
 function showPopupviewdoc(e) {
-    document.getElementById('case-study-content').innerHTML = '<iframe src="https://docs.google.com/gview?url=http://ieee802.org/secmail/docIZSEwEqHFr.doc&embedded=true" frameborder="0"></iframe>'
+    document.getElementById('case-study-content').innerHTML = '<iframe src="https://docs.google.com/gview?url=https://satamkundu.github.io/adExpertV1/asset/case-study/Capture a Trip - Case Study.docx&embedded=true" frameborder="0"></iframe>'
     console.log(e);
     popupviewdoc.classList.remove('hidden');
     backdrop.classList.remove('hidden');
