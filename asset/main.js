@@ -16,15 +16,18 @@ function showPopup(e) {
 }
 
 function showPopupviewdoc(e) {
-    document.getElementById('case-study-content').innerHTML = '<iframe src="https://docs.google.com/gview?url=https://satamkundu.github.io/adExpertV1/asset/case-study/Capture a Trip - Case Study.docx&embedded=true" frameborder="0"></iframe>'
-    console.log(e);
+    let url = `https://satamkundu.github.io/adExpertV1/asset/case-study/`
+    let fUrl = `${url}${e}.docx`
+    console.log(fUrl);
+    
+    document.getElementById('case-study-content').innerHTML = `<iframe src="${fUrl}&embedded=true" frameborder="0"></iframe>`
     popupviewdoc.classList.remove('hidden');
     backdrop.classList.remove('hidden');
 }
 
-document.querySelectorAll('.case-study').forEach(function(element) {
-    element.addEventListener('click', showPopupviewdoc)
-});
+// document.querySelectorAll('.case-study').forEach(function(element) {
+//     element.addEventListener('click', showPopupviewdoc)
+// });
 
 // Attach event listeners to buttons
 workWithUsBtn.addEventListener('click', showPopup);
